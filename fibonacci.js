@@ -9,19 +9,20 @@ The fibonacci sequence starts with 0 then 1. Each subsequent value can be obtain
 
 let nacci1 = 0
 let fibon2 = 1
-let fibonacci = nacci1 + fibon2
+let fibonacci = nacci1 + fibon2 
+let i = 3
 
 let number = Number(prompt("Enter a value for number: ")) 
 
 console.log(nacci1)
 console.log(fibon2)
 
-while(fibonacci <= number){
+while(i <= number){
 
 fibonacci  = nacci1 + fibon2;
 nacci1  = fibon2;
 fibon2  = fibonacci;
-
+i++;
 
 console.log(fibonacci);
 }
